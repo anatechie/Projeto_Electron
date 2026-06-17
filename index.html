@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Sistema de Estoque</title>
+</head>
+<body>
+    <main  class="container"> <!--div-->
+        <section class="cabecalho" >
+            <h1>Sistema de Estoque</h1>
+
+            <p>Cadastre seus produtos de forma simples</p>
+
+        </section>
+        
+        <section class="card formulario-card">
+            <h2>Cadastrar Produtos</h2>
+
+            <form id="formProduto">
+                <div class="grupo-formulario">
+                    <label for="nomeProduto">Nome do Produto</label>
+                    <input type="text" id="nomeProduto" placeholder="Ex.: Teclado Gamer">
+
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="marca">Marca do Produto</label>
+                    <input type="text" id="nomeProduto" placeholder="Ex.: Logitech">
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" placeholder="Ex.: 25" min="0">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="preco">Preço</label>
+                    <input type="number" id="preco" placeholder="Ex.: 25,99" min="0" step="0.01">
+                </div>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

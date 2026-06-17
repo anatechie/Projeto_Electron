@@ -1,0 +1,25 @@
+{
+  "name": "Projeto_Electron",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento",
+  "main": "main.js",
+  "scripts": {
+   "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anatechie/Projeto_Electron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/anatechie/Projeto_Electron/issues"
+  },
+  "homepage": "https://github.com/anatechie/Projeto_Electron#readme",
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-reloader": "^1.2.3"
+  }
+}
