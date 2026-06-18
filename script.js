@@ -91,6 +91,9 @@ formProduto.addEventListener('submit', function(evento){
         const botaoClicado = evento.target
 
         if(botaoClicado.classList.contains('botao-exlcuir'))
+        const idProduto = Number(botaoClicado)
+
+        produtos
     })
 })
 
