@@ -66,6 +66,31 @@ formProduto.addEventListener('submit', function(evento){
             atualizarResumo()
             return
         }
+
+        produtos.forEach(function(produto){
+            const totalProduto = produto.quantidade * produto.preco
+
+            const linha = document.createElement('tr')
+            linha.innerHTML = `
+            <td>${produto.nome}</td>
+            <td>${produto.marca}</td>
+            <td>${produto.quantidade}</td>
+            <td>${produto.preco}</td>
+            <td>${produto.totalProduto}</td>
+
+            <button class='botao-excluir data-id= ${produto.id}>Excluir<button/>
+            `
+            
+        listaProduto.appendChild(linha)
+        })
+
+        atualizarResumo()
+
     }
+    listaProduto.addEventListener('click', function(evento){
+        const botaoClicado = evento.target
+
+        if(botaoClicado.classList.contains('botao-exlcuir'))
+    })
 })
 
