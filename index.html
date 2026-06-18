@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <title> Sistema de Estoque</title>
 </head>
+
 <body>
-    <main  class="container"> <!--div-->
-        <section class="cabecalho" >
+    <main class="container"> <!--div-->
+        <section class="cabecalho">
             <h1>Sistema de Estoque</h1>
 
             <p>Cadastre seus produtos de forma simples</p>
 
         </section>
-        
+
         <section class="card formulario-card">
             <h2>Cadastrar Produtos</h2>
 
@@ -30,7 +32,7 @@
                     <label for="marca">Marca do Produto</label>
                     <input type="text" id="nomeProduto" placeholder="Ex.: Logitech">
                 </div>
-                
+
                 <div class="grupo-formulario">
                     <label for="quantidade">Quantidade</label>
                     <input type="number" id="quantidade" placeholder="Ex.: 25" min="0">
@@ -44,6 +46,50 @@
                 <button type="submit">Cadastrar Produto</button>
             </form>
         </section>
+
+        <section class="card resumo-card">
+            <h2>Resumo do Estoque</h2>
+
+            <div class="resumo">
+                <span>Total de produtos cadastrados:</span>
+                <strong id="quantidadeProdutos">0</strong>
+
+
+                <div>
+                    <span>Quatidade total em estoque: </span>
+                    <strong id="quantidadeTotal">0</strong>
+                </div>
+
+                <div>
+                    <span>Valor total em estoque: </span>
+                    <strong id="valorTotal">R$ 0,00</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="card tabela-card">
+            <h2>Produtos Cadastrados</h2>
+
+            <div class="tabela responsiva">
+                <table>
+                    <thead>
+                        <tr> <!--linha-->
+                            <th> Nome</th>  <!--celula-->
+                            <th> Marca</th>
+                            <th> Quantidade</th>
+                            <th> Preço</th>
+                            <th> Total</th>
+                            <th> Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaProduto"> </tbody>
+                </table>
+            </div>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -7,18 +7,90 @@
 body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f4f6;
+    /* background-color: #f3f4f6; */
     color: #111827;
     min-height: 100vh; /*view heigth tamanho da visualisacao*/
 }
 
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #fff;
+}
 
+.cabecalho{
+    margin-bottom: 25px;
+}
 
+.cabecalho h1{
+     font-size: 32px;
+     margin-bottom: 8px;
+}
 
+.cabecalho p{
+    color: #6b7280;
+}
 
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0, 00.5);
+}
 
+.card h2{
+    margin-bottom: 16px;
+}
 
+form{
+    display: flex;
+    gap: 16px;
+    align-items: end;
+    flex-wrap: wrap; 
+}
 
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    flex: 1;/*pega o espaço disponivel e ocupa*/
+    min-width: 180px;
+}
+
+.grupo-formulario label{
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.grupo-formulario input{
+    padding: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.grupo-formulario input:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+button{
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold ;
+    font-size: 15px;
+    min-width: 180px;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
 
 
 
