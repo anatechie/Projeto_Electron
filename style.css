@@ -92,7 +92,110 @@ button:hover{
     background-color: #1d4ed8;
 }
 
-
+.resumo {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .resumo div {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .resumo span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .resumo strong {
+    font-size: 22px;
+  }
+  
+  .tabela-responsiva {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f9fafb;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  th {
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  .botao-excluir {
+    background-color: #dc2626;
+    padding: 8px 10px;
+    min-width: 80px;
+  }
+  
+  .botao-excluir:hover {
+    background-color: #b91c1c;
+  }
+  
+  .mensagem-vazia {
+    text-align: center;
+    color: #6b7280;
+    padding: 20px;
+  }
+  
+  @media (max-width: 700px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+  
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+  
+    .grupo-formulario {
+        width: 100%;
+    }
+  
+    button {
+        width: 100%;
+    }
+  
+    .resumo {
+        flex-direction: column;
+    }
+  
+    .cabecalho h1 {
+        font-size: 26px;
+    }
+  
+    .card {
+        padding: 16px;
+    }
+  }
 
 
 
